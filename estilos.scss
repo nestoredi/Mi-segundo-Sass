@@ -1,0 +1,185 @@
+$color1:#16996d;
+$color2:#24e624;
+$color3:#42665a;
+$color4:orange;
+$color5:orangered;
+$color6:black;
+$color7:rgb(23, 84, 216);
+$color8:rgb(9, 45, 121);
+$color9:#064d35;
+$color10:white;
+
+$font1: verdana;
+
+@import "_respons1";
+
+
+*{
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(to left,$color1,$color2, $color3);
+    margin: 0;
+}
+.navbar{
+    background-image: linear-gradient(to left,$color1,$color2, $color3) !important;
+    height: 100px;
+    padding-bottom: 30px; 
+    
+    .logo{
+        text-overflow: 1;
+        text-align: center;
+        margin-top: 20px;
+        height: 75px;
+        width: 75px;
+        background:repeating-radial-gradient($color4 10%,$color5 30%,$color6 40%);
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 30px;
+        animation-name: giragira;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        animation-duration: 5s;
+        animation-direction:normal;
+    } 
+    @keyframes giragira {
+        0%{
+            transform: rotatey(0deg);
+            background:repeating-radial-gradient($color4 10%,$color5 30%,$color6 40%)
+        }
+        50%{
+            transform: rotateY(360deg);
+            background:repeating-radial-gradient($color7 10%,$color8 30%,black 40%)
+        }
+        100%{
+            transform: rotatey(0deg);
+    
+            }
+    }
+}
+.navbar-brand p{
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.jumbotron{
+    background-image: url(../imagenes/tedamosunamano.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+
+    h1{
+        text-align: center;
+        color: $color1;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: rgb(24, 22, 22) 2px 5px;
+    }
+    
+}.card1 {
+    background-color: $color9;
+    padding-top: 200px;
+}
+.card2{
+    background-color: $color1;
+    padding-top: 20px;
+}
+
+.color1{
+    background-color: $color3;
+    background-image: url();
+}
+.color2{
+    background-color: $color7;
+   
+}
+#img1{
+    padding-left: 20%;
+}
+.color3{
+    background-color: $color4;
+}
+.color4{
+    background-color: #1bcc91;
+}
+h3{
+    text-align: center;
+    color: $color10;
+}
+p{
+    text-align: center;
+    color: $color10;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+$estilo:(
+    tLetra:25px,
+    centro:center,
+    color:$color10,
+    Lcolor:$color9,
+);
+.par{
+    color: map-get($estilo,Lcolor);
+    font-size: map-get($estilo,tLetra);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content:map-get($estilo, centro );
+    align-items: map-get($estilo, centro );
+    background-color: map-get($estilo, color );
+}
+footer{
+    background-image: linear-gradient(to left,$color1,$color2, $color3);
+   
+    .rsocial {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-right: 50px;
+    }
+    span {
+        color: $color10;
+    }
+    h6{
+        color: $color10;
+    }
+    .copy{
+        display: flex;
+    }
+}
+.formu {
+    justify-content: space-evenly;
+}
+
+    .caja{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+        text-align: center;
+        color: $color9;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+//map inicio
+$fondo:(
+    caja1: posible,
+    caja2 :buscalacima,
+    caja3 :board-gf6a48531c_640,
+    caja4 :posible,
+);
+@each $caja,$caj in $fondo {
+    .caja-#{$caja}{
+        background-image:url("imagenes/#{$caj}.jpg") ;
+        background-position: center;
+        color: $color9;
+        text-align: center;
+        @extend .caja;
+        @extend .par;
+    }
+    
+}

@@ -1,0 +1,273 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .jumbotron {
+    width: auto !important;
+  }
+  body {
+    width: 100vw;
+  }
+  .jumbotron {
+    background-image: url(../imagenes/buscalacima.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    height: 400px;
+  }
+  .jumbotron h1 {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffff;
+    text-align: center;
+  }
+  .jumbotron p {
+    color: #42665a;
+    text-align: right;
+    font: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h1 {
+    text-align: center;
+    color: #24e624;
+    font-size: 60px;
+    font-family: Roboto;
+    text-shadow: #181616 2px 5px;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-image: -webkit-gradient(linear, right top, left top, from(#16996d), color-stop(#24e624), to(#42665a));
+  background-image: linear-gradient(to left, #16996d, #24e624, #42665a);
+  margin: 0;
+}
+
+.navbar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#16996d), color-stop(#24e624), to(#42665a)) !important;
+  background-image: linear-gradient(to left, #16996d, #24e624, #42665a) !important;
+  height: 100px;
+  padding-bottom: 30px;
+}
+
+.navbar .logo {
+  text-overflow: 1;
+  text-align: center;
+  margin-top: 20px;
+  height: 75px;
+  width: 75px;
+  background: repeating-radial-gradient(orange 10%, orangered 30%, black 40%);
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 30px;
+  -webkit-animation-name: giragira;
+          animation-name: giragira;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes giragira {
+  0% {
+    -webkit-transform: rotatey(0deg);
+            transform: rotatey(0deg);
+    background: repeating-radial-gradient(orange 10%, orangered 30%, black 40%);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background: repeating-radial-gradient(#1754d8 10%, #092d79 30%, black 40%);
+  }
+  100% {
+    -webkit-transform: rotatey(0deg);
+            transform: rotatey(0deg);
+  }
+}
+
+@keyframes giragira {
+  0% {
+    -webkit-transform: rotatey(0deg);
+            transform: rotatey(0deg);
+    background: repeating-radial-gradient(orange 10%, orangered 30%, black 40%);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background: repeating-radial-gradient(#1754d8 10%, #092d79 30%, black 40%);
+  }
+  100% {
+    -webkit-transform: rotatey(0deg);
+            transform: rotatey(0deg);
+  }
+}
+
+.navbar-brand p {
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+.jumbotron {
+  background-image: url(../imagenes/tedamosunamano.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  color: #16996d;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: #181616 2px 5px;
+}
+
+.card1 {
+  background-color: #064d35;
+  padding-top: 200px;
+}
+
+.card2 {
+  background-color: #16996d;
+  padding-top: 20px;
+}
+
+.color1 {
+  background-color: #42665a;
+  background-image: url();
+}
+
+.color2 {
+  background-color: #1754d8;
+}
+
+#img1 {
+  padding-left: 20%;
+}
+
+.color3 {
+  background-color: orange;
+}
+
+.color4 {
+  background-color: #1bcc91;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.par, .caja-caja1, .caja-caja2, .caja-caja3, .caja-caja4 {
+  color: #064d35;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, right top, left top, from(#16996d), color-stop(#24e624), to(#42665a));
+  background-image: linear-gradient(to left, #16996d, #24e624, #42665a);
+}
+
+footer .rsocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 15px;
+  padding-right: 50px;
+}
+
+footer span {
+  color: white;
+}
+
+footer h6 {
+  color: white;
+}
+
+footer .copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formu {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.caja, .caja-caja1, .caja-caja2, .caja-caja3, .caja-caja4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  text-align: center;
+  color: #064d35;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caja-caja1 {
+  background-image: url("imagenes/posible.jpg");
+  background-position: center;
+  color: #064d35;
+  text-align: center;
+}
+
+.caja-caja2 {
+  background-image: url("imagenes/buscalacima.jpg");
+  background-position: center;
+  color: #064d35;
+  text-align: center;
+}
+
+.caja-caja3 {
+  background-image: url("imagenes/board-gf6a48531c_640.jpg");
+  background-position: center;
+  color: #064d35;
+  text-align: center;
+}
+
+.caja-caja4 {
+  background-image: url("imagenes/posible.jpg");
+  background-position: center;
+  color: #064d35;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,41 @@
+@media only screen and (min-width:320px) and (max-width:768px){
+    .jumbotron{
+        width: auto !important;
+
+    }
+    body{
+        width: 100vw;
+    }
+
+.jumbotron{
+    background-image: url(../imagenes/buscalacima.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    height: 400px;
+}
+.jumbotron h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffff;
+    text-align: center;
+}
+.jumbotron p{
+    color: #42665a;
+    text-align: right;
+    font: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+@mixin titulo {
+    text-align: center;
+    color: $color2;
+    font-size: 60px;
+    font-family: Roboto;
+    text-shadow: rgb(24,22,22)2px 5px;
+    
+}
+   h1{
+    @include titulo;
+     }
+}
